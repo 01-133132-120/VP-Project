@@ -21,15 +21,10 @@ namespace PrototypeProject
         int y = 0;
         int a = 0;
         int b = 0;
-        //int Countertime = 1;
-        //int trackSort = 1;
-       // int k = 0;
-        //int n = 0;
-        //int e = 0;
-        //int f = 0;
         int n = 0;
         int k = 0;
         int check = 0;
+        int check1 = 0;
         int value;
         public Form1()
         {           
@@ -73,7 +68,7 @@ namespace PrototypeProject
         }
         private void button4_Click(object sender, EventArgs e)
         {
-           // lablab = new Label[Convert.ToInt32(textBox1.Text)];
+            lablab = new Label[Convert.ToInt32(textBox1.Text)];
             value = Convert.ToInt32(textBox1.Text);
             try
             {
@@ -88,7 +83,7 @@ namespace PrototypeProject
                 }                
                 if ((String)comboBox1.Text == "Selection Sort")
                 {
-                   // lablab = new Label [Convert.ToInt32(textBox1.Text)];
+                    lablab = new Label [Convert.ToInt32(textBox1.Text)];
                     for (int i = 0; i < value; i++)
                     {
                         lablab[i] = new Label();
@@ -135,6 +130,7 @@ namespace PrototypeProject
                     }                    
                     x = 0;
                     check++;
+                    timer1.Start();
                 }
                 if ((String)comboBox1.Text == "Bubble Sort")
                 {
@@ -145,7 +141,7 @@ namespace PrototypeProject
                             lablab[i].Dispose();
                         }
                     }
-                    //lablab = new Label[Convert.ToInt32(textBox1.Text)];
+                    lablab = new Label[Convert.ToInt32(textBox1.Text)];
                     for ( int i = 0; i < value; i++)
                     {
                         lablab[i] = new Label();
@@ -161,7 +157,9 @@ namespace PrototypeProject
                         lablab[i].Visible = true;                                               
                     }
                         x = 0;
-                    check++;                    
+                    check++;
+                    timer1.Start();
+                    timer2.Start();
                 }
                 else if ((String)comboBox1.Text == "")
                 {
@@ -180,7 +178,7 @@ namespace PrototypeProject
                     lablab[k].BackColor = Color.Yellow;
                     k++;
                 }
-                else if (k <= lablab.Length)
+                else if (k <lablab.Length)
                 {
                     lablab[k - 1].BackColor = Color.White;
                     lablab[k].BackColor = Color.Yellow;
@@ -189,7 +187,7 @@ namespace PrototypeProject
                 else if (k == lablab.Length)
                 {
                     lablab[k - 1].BackColor = Color.White;
-                    lablab[mid()].BackColor = Color.Red;
+                    lablab[minimum()].BackColor = Color.Red;
                     k++;
                 }
                 else if (n > lablab.Length)
@@ -201,6 +199,7 @@ namespace PrototypeProject
                     k = 0;
                     timer1.Stop();
                 }
+                button4.Enabled = false;
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -216,6 +215,13 @@ namespace PrototypeProject
             {
                 try
                 {
+                    if (check1 != 0)
+                    {
+                        for (int i = 0; i <txttxt.Length; i++)
+                        {
+                            txttxt[i].Dispose();
+                        }
+                    }
                   txttxt = new TextBox[Convert.ToInt32(textBox1.Text)];
                     for (int i = 0; i < txttxt.Length; i++)
                     {
@@ -226,6 +232,8 @@ namespace PrototypeProject
                         panel1.Controls.Add(txttxt[i]);
                         txttxt[i].Visible = true;
                     }
+                    a = 0;
+                    check1++;
                     button1.Enabled = true;
                     button2.Enabled = true;
                     button3.Enabled = true;
@@ -238,14 +246,29 @@ namespace PrototypeProject
             }
         }
         private void timer2_Tick(object sender, EventArgs e)
-        {              
+        {
+           /* int data = 0;//timer 2 
+            int p = 0;//label jis kai sath replace krna hai.
+            int length=0;//distance between 
+            if (data == 0)
+            {
+                length = lablab[minimum()].Location.X-lablab[p].Location.X;
+               
+            }
+            MessageBox.Show("length" + length);*/
+           // int length = 0;
+                lablab[minimum()].Location = new Point(lablab[minimum()].Location.X , lablab[minimum()].Location.Y+1);
+                if (lablab[minimum()].Location.Y > 100) {
+                    timer2.Stop();
+                }
+
         }
-        public int mid()
+        public int minimum()
         {
             int min = n;
             for (int i = n; i < lablab.Length; i++)
             {
-                for (int j = i + 1; j < lablab.Length; j++)
+                for (int j = i; j < lablab.Length; j++)
                 {
                     if (Convert.ToInt32(lablab[i].Text) < Convert.ToInt32(lablab[min].Text))
                         min = i;

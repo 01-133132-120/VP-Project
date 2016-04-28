@@ -82,7 +82,7 @@
             // 
             this.panel1.Location = new System.Drawing.Point(171, 124);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(549, 43);
+            this.panel1.Size = new System.Drawing.Size(1009, 43);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -131,29 +131,29 @@
             // 
             // panel2
             // 
-            this.panel2.Location = new System.Drawing.Point(27, 263);
+            this.panel2.Location = new System.Drawing.Point(4, 270);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(848, 149);
+            this.panel2.Size = new System.Drawing.Size(1329, 326);
             this.panel2.TabIndex = 8;
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(64, 24);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(179, 13);
+            this.label3.Size = new System.Drawing.Size(213, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "How many text boxes want to create";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(268, 21);
+            this.textBox1.Location = new System.Drawing.Point(293, 21);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 10;
@@ -170,14 +170,15 @@
             // 
             // timer2
             // 
-            this.timer2.Enabled = true;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(886, 599);
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.ClientSize = new System.Drawing.Size(1336, 599);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
