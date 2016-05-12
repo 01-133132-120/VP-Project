@@ -31,6 +31,7 @@ namespace PrototypeProject
         int replace = 0;
         int value;
         int j = 0;
+        int l = 0;
         public Form1()
         {           
             InitializeComponent();
@@ -162,7 +163,7 @@ namespace PrototypeProject
                     }// End for
                         x = 0;
                     check++;
-                    timer1.Start();
+                    timer5.Start();
                     
                 }// End bubble sort if
                 else if ((String)comboBox1.Text == "")
@@ -352,6 +353,20 @@ namespace PrototypeProject
             }
             return min;
         }
+        public int minimum1(Label[]lablab)
+        {
+            int min = n;
+
+            for (int j = n; j < lablab.Length; j++)
+            {
+                for (i = j + 1; i < lablab.Length; i++)
+                {
+                    if (Convert.ToInt32(lablab[i].Text) < Convert.ToInt32(lablab[min].Text))
+                        min = i;
+                }
+            }
+            return min;
+        }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
         {
@@ -427,9 +442,7 @@ namespace PrototypeProject
 
         private void button4_MouseLeave(object sender, EventArgs e)
         {
-            button4.Size = new Size(96, 30);
-            
-            
+            button4.Size = new Size(96, 30);            
         }
 
         private void refreshToolStripMenuItem_Click_1(object sender, EventArgs e)
@@ -461,52 +474,197 @@ namespace PrototypeProject
         }
 
         private void timer3_Tick(object sender, EventArgs e)
-        {
-            if (j != 0)
-            {
-               if (k == 1)
+        {           
+                if (j != 0)
                 {
-                    if (j != lablab.Length)
+                    if (k == 1)
                     {
-                        lablab[j - 1].BackColor = Color.Yellow;
-                        k++;
+                        if (j != lablab.Length)
+                        {
+                            lablab[j - 1].BackColor = Color.Yellow;
+                            k++;
+                        }
+                        else
+                        {
+                            k++;
+                        }
                     }
-                   else
-                   {
-                        k++;
-                    }
-                }
-                else if (k == 2)
-                {
-                    lablab[j - 1].BackColor = Color.White;
-                    if (j != lablab.Length)
+                    else if (k == 2)
                     {
-                        lablab[j].BackColor = Color.Yellow;
-                        k++;
+                        lablab[j - 1].BackColor = Color.White;
+                        if (j != lablab.Length)
+                        {
+                            lablab[j].BackColor = Color.Yellow;
+                            k++;
+                        }
+                        else
+                        {
+                            timer3.Stop();
+                        }
+                    }
+                    else if (Convert.ToInt32(lablab[j - 1].Text) > Convert.ToInt32(lablab[j].Text))
+                    {
+                        k = 1;
+                        lablab[j].BackColor = Color.Red;
+                        timer3.Stop();
+                        timer4.Start();
+                        lablab[j].BackColor = Color.White;
                     }
                     else
                     {
-                        k++;
+                        if (j == lablab.Length-1)
+                        {
+                            timer3.Stop();
+                            lablab[j].BackColor = Color.White;
+                             MessageBox.Show("Sorting Completed!!");
+                        }
+                        else
+                        {
+                            k = 1;
+                            timer3.Stop();
+                            j++;
+                            timer3.Start();
+                        }
                     }
+
                 }
-                else if (Convert.ToInt32(lablab[j - 1].Text) > Convert.ToInt32(lablab[j].Text))
+                else
                 {
                     k = 1;
-                    lablab[j].BackColor = Color.Red;
+                    j = n;
+                    n++;
+                    lablab[j].BackColor = Color.White;
                     timer3.Stop();
-                }
+                    timer3.Start();
+                   
+                }            
+        }
 
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            if (check2 < 100)
+            {
+                int a = lablab[j].Location.X;
+                int b = lablab[j].Location.Y;
+                int c = lablab[j - 1].Location.X;
+                int d = lablab[j - 1].Location.Y;
+                Point p = new Point(a - 1, b);
+                lablab[j].Location = p;
+                Point q = new Point(c + 1, d);
+                lablab[j - 1].Location = q;
+                check2++;
             }
             else
             {
-                k = 1;
-                j = n;
-                n++;
-                lablab[0].BackColor = Color.CornflowerBlue;
-                timer3.Stop();
+                timer4.Stop();
+                 k = 1;
+                check2 = 0;
+                Label temp = lablab[j - 1];
+                lablab[j - 1] = lablab[j];
+                lablab[j] = temp;
+                j--;
                 timer3.Start();
             }
+        }
 
+        private void timer5_Tick(object sender, EventArgs e)
+        {
+            
+
+                if (l != 0)
+                {
+                    if (k == 1)
+                    {
+                        if (l != lablab.Length)
+                        {
+                            lablab[l - 1].BackColor = Color.Yellow;
+                            k++;
+                        }
+                        else
+                        {
+                            k++;
+                        }
+                    }
+                    else if (k == 2)
+                    {
+                        lablab[l - 1].BackColor = Color.White;
+                        if (l != lablab.Length)
+                        {
+                            lablab[j].BackColor = Color.Yellow;
+                            k++;
+                        }
+                        else
+                        {
+                            timer5.Stop();
+                        }
+                    }
+                    else if (Convert.ToInt32(lablab[l - 1].Text) > Convert.ToInt32(lablab[l].Text))
+                    {
+                        k = 1;
+                        lablab[l].BackColor = Color.Red;
+                        timer5.Stop();
+                       
+                        timer6.Start();
+                        lablab[j].BackColor = Color.White;
+                    }
+                    else
+                    {
+                        if (l == lablab.Length-1)
+                        {
+                            timer5.Stop();
+                            //timer5.Start();
+                            lablab[j].BackColor = Color.White;
+                            MessageBox.Show("Sorting Completed!!");
+                        }
+                        else
+                        {
+                            k = 1;
+                            timer5.Stop();
+                            l++;
+                            timer5.Start();
+                        }
+                    }
+
+                }
+                else
+                {
+                    k = 1;
+                    l = n;
+                    n++;
+                    lablab[l].BackColor = Color.White;
+                    timer5.Stop();
+                    timer5.Start();
+
+                }
+        }
+
+        private void timer6_Tick(object sender, EventArgs e)
+        {
+                if (check2 < 100)
+                {
+                    int a2 = lablab[l].Location.X;
+                    int b2 = lablab[l].Location.Y;
+                    int c2 = lablab[l - 1].Location.X;
+                    int d2 = lablab[l - 1].Location.Y;
+                    Point p1 = new Point(a2 - 1, b2);
+                    lablab[l].Location = p1;
+                    Point q1 = new Point(c2 + 1, d2);
+                    lablab[l - 1].Location = q1;
+                    check2++;
+                }
+                else
+                {
+                    timer6.Stop();
+                    k = 1;
+                    check2 = 0;
+                    
+                        Label temp = lablab[l - 1];
+                        lablab[l - 1] = lablab[l];
+                        lablab[l] = temp;
+                  
+                     //l--;
+                    timer5.Start();
+                     }
         }
         }
     }
