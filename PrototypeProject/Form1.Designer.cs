@@ -30,81 +30,78 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnAscending = new System.Windows.Forms.Button();
+            this.btnDecending = new System.Windows.Forms.Button();
+            this.btnRandom = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnsort = new System.Windows.Forms.Button();
+            this.Sortpanel = new System.Windows.Forms.Panel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnGenerate = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.refreshToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.timer5 = new System.Windows.Forms.Timer(this.components);
             this.timer6 = new System.Windows.Forms.Timer(this.components);
+            this.btnback = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnAscending
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Location = new System.Drawing.Point(199, 127);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 33);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Ascending Order";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            this.button1.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
-            this.button1.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
+            this.btnAscending.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAscending.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAscending.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAscending.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnAscending.Location = new System.Drawing.Point(199, 127);
+            this.btnAscending.Name = "btnAscending";
+            this.btnAscending.Size = new System.Drawing.Size(148, 33);
+            this.btnAscending.TabIndex = 0;
+            this.btnAscending.Text = "Ascending Order";
+            this.btnAscending.UseVisualStyleBackColor = false;
+            this.btnAscending.Click += new System.EventHandler(this.button1_Click);
+            this.btnAscending.MouseEnter += new System.EventHandler(this.button1_MouseEnter);
+            this.btnAscending.MouseLeave += new System.EventHandler(this.button1_MouseLeave);
             // 
-            // button2
+            // btnDecending
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button2.Location = new System.Drawing.Point(199, 88);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 33);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Decending Order";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            this.button2.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
-            this.button2.MouseHover += new System.EventHandler(this.button2_MouseHover);
+            this.btnDecending.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnDecending.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDecending.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDecending.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnDecending.Location = new System.Drawing.Point(199, 88);
+            this.btnDecending.Name = "btnDecending";
+            this.btnDecending.Size = new System.Drawing.Size(148, 33);
+            this.btnDecending.TabIndex = 1;
+            this.btnDecending.Text = "Decending Order";
+            this.btnDecending.UseVisualStyleBackColor = false;
+            this.btnDecending.Click += new System.EventHandler(this.button2_Click);
+            this.btnDecending.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.btnDecending.MouseHover += new System.EventHandler(this.button2_MouseHover);
             // 
-            // button3
+            // btnRandom
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button3.Location = new System.Drawing.Point(199, 49);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(148, 33);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Random Number";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            this.button3.MouseEnter += new System.EventHandler(this.button3_MouseEnter);
-            this.button3.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
+            this.btnRandom.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRandom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRandom.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRandom.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnRandom.Location = new System.Drawing.Point(199, 49);
+            this.btnRandom.Name = "btnRandom";
+            this.btnRandom.Size = new System.Drawing.Size(148, 33);
+            this.btnRandom.TabIndex = 2;
+            this.btnRandom.Text = "Random Number";
+            this.btnRandom.UseVisualStyleBackColor = false;
+            this.btnRandom.Click += new System.EventHandler(this.button3_Click);
+            this.btnRandom.MouseEnter += new System.EventHandler(this.button3_MouseEnter);
+            this.btnRandom.MouseLeave += new System.EventHandler(this.button3_MouseLeave);
             // 
             // label1
             // 
@@ -143,29 +140,30 @@
             this.comboBox1.Size = new System.Drawing.Size(148, 21);
             this.comboBox1.TabIndex = 6;
             // 
-            // button4
+            // btnsort
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button4.Location = new System.Drawing.Point(395, 210);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(96, 30);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Sort";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            this.button4.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
-            this.button4.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
+            this.btnsort.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnsort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsort.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsort.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnsort.Location = new System.Drawing.Point(395, 210);
+            this.btnsort.Name = "btnsort";
+            this.btnsort.Size = new System.Drawing.Size(96, 30);
+            this.btnsort.TabIndex = 7;
+            this.btnsort.Text = "Sort";
+            this.btnsort.UseVisualStyleBackColor = false;
+            this.btnsort.Click += new System.EventHandler(this.button4_Click);
+            this.btnsort.MouseEnter += new System.EventHandler(this.button4_MouseEnter);
+            this.btnsort.MouseLeave += new System.EventHandler(this.button4_MouseLeave);
             // 
-            // panel2
+            // Sortpanel
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.panel2.Location = new System.Drawing.Point(12, 270);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1312, 317);
-            this.panel2.TabIndex = 8;
+            this.Sortpanel.AutoSize = true;
+            this.Sortpanel.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.Sortpanel.Location = new System.Drawing.Point(12, 270);
+            this.Sortpanel.Name = "Sortpanel";
+            this.Sortpanel.Size = new System.Drawing.Size(1312, 266);
+            this.Sortpanel.TabIndex = 8;
             // 
             // timer1
             // 
@@ -190,21 +188,22 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(148, 20);
             this.textBox1.TabIndex = 10;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // button5
+            // btnGenerate
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button5.Location = new System.Drawing.Point(395, 20);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(148, 23);
-            this.button5.TabIndex = 11;
-            this.button5.Text = "Generate";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            this.button5.MouseEnter += new System.EventHandler(this.button5_MouseEnter);
-            this.button5.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
+            this.btnGenerate.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnGenerate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGenerate.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnGenerate.Location = new System.Drawing.Point(395, 20);
+            this.btnGenerate.Name = "btnGenerate";
+            this.btnGenerate.Size = new System.Drawing.Size(148, 23);
+            this.btnGenerate.TabIndex = 11;
+            this.btnGenerate.Text = "Generate";
+            this.btnGenerate.UseVisualStyleBackColor = false;
+            this.btnGenerate.Click += new System.EventHandler(this.button5_Click);
+            this.btnGenerate.MouseEnter += new System.EventHandler(this.button5_MouseEnter);
+            this.btnGenerate.MouseLeave += new System.EventHandler(this.button5_MouseLeave);
             // 
             // timer2
             // 
@@ -213,6 +212,7 @@
             // 
             // panel1
             // 
+            this.panel1.AutoSize = true;
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.panel1.Location = new System.Drawing.Point(199, 171);
             this.panel1.Name = "panel1";
@@ -223,9 +223,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.SystemColors.GrayText;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox1.Location = new System.Drawing.Point(4, -6);
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1329, 603);
+            this.pictureBox1.Size = new System.Drawing.Size(1344, 587);
             this.pictureBox1.TabIndex = 13;
             this.pictureBox1.TabStop = false;
             // 
@@ -238,28 +239,6 @@
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.refreshToolStripMenuItem,
-            this.refreshToolStripMenuItem1});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(114, 48);
-            // 
-            // refreshToolStripMenuItem
-            // 
-            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
-            this.refreshToolStripMenuItem.Text = "close";
-            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click_1);
-            // 
-            // refreshToolStripMenuItem1
-            // 
-            this.refreshToolStripMenuItem1.Name = "refreshToolStripMenuItem1";
-            this.refreshToolStripMenuItem1.Size = new System.Drawing.Size(113, 22);
-            this.refreshToolStripMenuItem1.Text = "Refresh";
-            this.refreshToolStripMenuItem1.Click += new System.EventHandler(this.refreshToolStripMenuItem1_Click);
-            // 
             // timer3
             // 
             this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
@@ -271,35 +250,50 @@
             // 
             // timer5
             // 
-            this.timer5.Interval = 1;
             this.timer5.Tick += new System.EventHandler(this.timer5_Tick);
             // 
             // timer6
             // 
-            this.timer6.Interval = 1;
+            this.timer6.Interval = 10;
             this.timer6.Tick += new System.EventHandler(this.timer6_Tick);
+            // 
+            // btnback
+            // 
+            this.btnback.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnback.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnback.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnback.Location = new System.Drawing.Point(286, 543);
+            this.btnback.Name = "btnback";
+            this.btnback.Size = new System.Drawing.Size(471, 23);
+            this.btnback.TabIndex = 15;
+            this.btnback.Text = "Back";
+            this.btnback.UseVisualStyleBackColor = false;
+            this.btnback.Click += new System.EventHandler(this.btnback_Click);
+            this.btnback.MouseLeave += new System.EventHandler(this.btnback_MouseLeave);
+            this.btnback.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnback_MouseMove);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.AutoScrollMargin = new System.Drawing.Size(20, 30);
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1336, 599);
-            this.ContextMenuStrip = this.contextMenuStrip1;
+            this.ClientSize = new System.Drawing.Size(1336, 611);
+            this.Controls.Add(this.btnback);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.Sortpanel);
+            this.Controls.Add(this.btnsort);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnRandom);
+            this.Controls.Add(this.btnDecending);
+            this.Controls.Add(this.btnAscending);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
@@ -309,7 +303,6 @@
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,29 +310,27 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnAscending;
+        private System.Windows.Forms.Button btnDecending;
+        private System.Windows.Forms.Button btnRandom;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button btnsort;
+        private System.Windows.Forms.Panel Sortpanel;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem1;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.Timer timer4;
         private System.Windows.Forms.Timer timer5;
         private System.Windows.Forms.Timer timer6;
+        private System.Windows.Forms.Button btnback;
     }
 }
 

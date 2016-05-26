@@ -6,5 +6,5 @@ C:\Users\MSHOME\documents\visual studio 2013\Projects\PrototypeProject\Prototype
 C:\Users\MSHOME\documents\visual studio 2013\Projects\PrototypeProject\PrototypeProject\obj\Debug\PrototypeProject.csproj.GenerateResource.Cache
 C:\Users\MSHOME\documents\visual studio 2013\Projects\PrototypeProject\PrototypeProject\obj\Debug\PrototypeProject.exe
 C:\Users\MSHOME\documents\visual studio 2013\Projects\PrototypeProject\PrototypeProject\obj\Debug\PrototypeProject.pdb
-C:\Users\MSHOME\documents\visual studio 2013\Projects\PrototypeProject\PrototypeProject\obj\Debug\PrototypeProject.csprojResolveAssemblyReference.cache
 C:\Users\MSHOME\documents\visual studio 2013\Projects\PrototypeProject\PrototypeProject\obj\Debug\PrototypeProject.Main.resources
+C:\Users\MSHOME\documents\visual studio 2013\Projects\PrototypeProject\PrototypeProject\obj\Debug\PrototypeProject.csprojResolveAssemblyReference.cache
